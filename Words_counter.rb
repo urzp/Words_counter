@@ -1,4 +1,4 @@
-puts "Put your text here: "
+puts "Put your text below: "
 text = gets.chomp
 words=text.split(" ")
 frequencies=Hash.new(0)

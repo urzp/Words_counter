@@ -8,3 +8,7 @@ words.each{|i| frequencies[i]+=1 } # помешаем в хеш слова (i) �
 
 frequencies=frequencies.sort_by{|word,count| count}  # сортеруем слова по колличеству повторений и переворачивам хеш по убывании колл повторений
 frequencies.reverse!
+
+frequencies.each do |word, frequency|
+   puts word + " "+ frequency.to_s 
+end
